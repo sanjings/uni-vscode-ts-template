@@ -1,0 +1,44 @@
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-sbt {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-sad {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-row-c {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-col-c {
+  display: flex;
+  align-items: center;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-1 {
+  flex: 1;
+  overflow: hidden;
+}
+
+.flex-1-scroll {
+  flex: 1;
+  overflow: auto;
+}

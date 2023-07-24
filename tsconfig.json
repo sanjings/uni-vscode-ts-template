@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "importHelpers": true,
+    "allowSyntheticDefaultImports": true,
+    "useDefineForClassFields": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "types/*": ["./types/*"]
+    },
+    "lib": ["esnext", "dom"],
+    "types": [
+      "@dcloudio/types",
+      "uni-app-types",
+      "miniprogram-api-typings",
+      "mini-types",
+      "pinia-plugin-persist-uni",
+      "@types/node",
+      "./types/global.d.ts"
+    ]
+  },
+  "vueCompilerOptions": {
+    "experimentalRuntimeMode": "runtime-uni-app"
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "types/shime-uni.d.ts", "types/env.d.ts"]
+}

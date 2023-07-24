@@ -1,0 +1,11 @@
+page {
+  font-size: $uni-font-size-base;
+  font-family: 'PingFang SC', 'Microsoft YaHei', SimHei, sans-serif;
+  font-weight: 400;
+  color: $uni-text-color;
+  background-color: $uni-bg-color-grey;
+}
+
+.rmb {
+  @include unit-before('￥');
+}

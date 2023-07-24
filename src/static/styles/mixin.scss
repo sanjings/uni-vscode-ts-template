@@ -1,0 +1,64 @@
+// 单行文字超出显示省略号
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 多行文字超出显示省略号
+@mixin row-ellipsis($row: 2) {
+  display: box;
+  overflow: hidden;
+  -webkit-line-clamp: $row;
+  -webkit-box-orient: vertical;
+}
+
+// 禁止文本被选择
+@mixin user-select {
+  user-select: none;
+}
+
+// 清除浮动
+@mixin clearfix {
+  *zoom: 1;
+
+  &::after {
+    display: block;
+    clear: both;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    content: '';
+  }
+}
+
+// 单位前缀
+@mixin unit-before($unit: '￥') {
+  &::before {
+    content: $unit;
+  }
+}
+
+// 三角形
+@mixin triangle($direction: 'up', $sizeW: 40rpx, $sizeH: 16rpx, $color: #111111) {
+  display: block;
+  width: 0;
+  height: 0;
+  @if $direction == 'up' {
+    border-right: 1 / 2 * $sizeW solid transparent;
+    border-bottom: $sizeH solid $color;
+    border-left: 1 / 2 * $sizeW solid transparent;
+  } @else if $direction == 'down' {
+    border-top: $sizeH solid $color;
+    border-right: 1 / 2 * $sizeW solid transparent;
+    border-left: 1 / 2 * $sizeW solid transparent;
+  } @else if $direction == 'left' {
+    border-top: 1 / 2 * $sizeW solid transparent;
+    border-right: $sizeH solid $color;
+    border-bottom: 1 / 2 * $sizeW solid transparent;
+  } @else if $direction == 'right' {
+    border-top: 1 / 2 * $sizeW solid transparent;
+    border-bottom: 1 / 2 * $sizeW solid transparent;
+    border-left: $sizeH solid $color;
+  }
+}

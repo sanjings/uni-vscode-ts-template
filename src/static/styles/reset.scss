@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+view,
+scroll-view,
+swiper,
+swiper-item,
+cover-view,
+cover-image,
+icon,
+text,
+rich-text,
+progress,
+button,
+checkbox,
+form,
+input,
+label,
+radio,
+slider,
+switch,
+textarea,
+navigator,
+audio,
+camera,
+image,
+video {
+  font: inherit;
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none;
+}

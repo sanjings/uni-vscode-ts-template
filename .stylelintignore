@@ -1,0 +1,7 @@
+node_modules
+public/
+dist/
+test
+build/
+src/static/styles/base.scss
+src/static/styles/reset.scss

@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "Vue.volar",
+    "Vue.vscode-typescript-vue-plugin",
+    "esbenp.prettier-vscode",
+    "stylelint.vscode-stylelint",
+    "mrmaoddxxaa.create-uniapp-view",
+    "uni-helper.uni-app-schemas-vscode",
+    "aaron-bond.better-comments",
+    "mrmlnc.vscode-scss"
+  ]
+}

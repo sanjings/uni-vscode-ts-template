@@ -1,0 +1,11 @@
+/dist/*
+build/
+.local
+.output.js
+/node_modules/**
+**/*.svg
+**/*.sh
+/public/*
+# 忽略uni-app官方的组件库错误和警告
+src/components/uni-**
+src/api
